@@ -5,6 +5,8 @@ import jointhemovement from '../views/jointhemovement.vue'
 import register from '../components/Register.vue'
 import questions from '../components/Questions.vue'
 import dashboard from '../views/Dashboard_vol.vue'
+import loginadmin from '../components/loginadmin.vue'
+import dashboardAdmin from '../views/Dashboard_admin.vue'
 
 Vue.use(VueRouter)
 
@@ -44,6 +46,19 @@ const routes = [
     meta: {
       requiresAuth: true
     }
+  },
+  {
+    path: "/dashboardAdmin/:Email",
+    name: "dashboardAdmin",
+    component: dashboardAdmin,
+    meta: {
+      requiresAuth: true
+    }
+  },
+  {
+    path: '/loginadmin/',
+    name: "loginadmin",
+    component: loginadmin
   }
 ]
 

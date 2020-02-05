@@ -237,7 +237,10 @@ export default {
       dialog: false,
       available: "",
       volunteers_email: [],
-      staff_email: []
+      staff_email: [],
+      description: '',
+      score: '',
+      pass: false
     };
   },
   created(){
@@ -287,7 +290,10 @@ export default {
                   interests: this.chips,
                   travel: this.distance,
                   email: this.$route.params.Email,
-                  id_email: this.$route.params.ID
+                  id_email: this.$route.params.ID,
+                  description: this.description,
+                  score: this.score,
+                  pass: this.pass
                 })
                 .then(docRef => {
                   this.$router.push({

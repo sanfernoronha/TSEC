@@ -137,7 +137,7 @@
             </v-card-text>
 
             <v-card-actions class="black">
-              <v-btn to="/loginforstaff" class="ma-2" outlined color="yellow">Staff Login</v-btn>
+              <v-btn to="/loginadmin" class="ma-2" outlined color="yellow">Staff Login</v-btn>
             </v-card-actions>
           </v-card>
         </v-row>
